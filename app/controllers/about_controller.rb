@@ -1,6 +1,8 @@
 class AboutController < ApplicationController
 
   def index
+
+
   end
 
   def team
@@ -11,5 +13,4 @@ class AboutController < ApplicationController
 
   def na
   end
-
 end
