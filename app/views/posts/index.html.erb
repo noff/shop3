@@ -1,0 +1,9 @@
+<h1>Что-нибудь, ну постс</h1>
+
+<%= link_to 'Создать пост', new_post_path, class: 'btn btn-primary' %>
+
+<% @posts.each do |p| %>
+    <h2><%= link_to p.title, p %></h2>
+    <p><%= p.description %></p>
+<% end %>
+

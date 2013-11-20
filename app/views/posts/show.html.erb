@@ -1,0 +1,7 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.description %></p>
+<p>
+  <%= link_to 'Редактировать', edit_post_path(@post), class: 'btn' %>
+  <%= link_to 'Удалить', @post, method: :delete, confirm: 'Точно?', class: 'btn' %>
+  <%= link_to 'Назад', posts_path, class: 'btn' %>
+</p>

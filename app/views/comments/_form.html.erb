@@ -1,0 +1,14 @@
+<%= simple_form_for(@comment) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :item_id, as: :hidden %>
+    <%= f.input :name %>
+    <%= f.input :message %>
+    <%= f.input :rating, collection: [5,4,3,2,1] %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
