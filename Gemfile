@@ -7,8 +7,16 @@ gem 'rails', '4.0.0'
 # Set Twitter Bootstrap Gem
 gem "twitter-bootstrap-rails", ">= 2.2.8"
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+group :development do
+	gem 'sqlite3'
+end
+group :test do
+	gem 'sqlite3'
+end
+group :production do
+	gem 'pg'
+end
 
 
 gem 'devise'
