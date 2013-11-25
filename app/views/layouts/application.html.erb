@@ -14,11 +14,11 @@
       <div class="navbar-inner">
         <%= link_to "Мой магазин", root_path, class: 'brand' %>
         <ul class="nav">
-          <li><%= link_to "О проекте", about_path %></li>
-          <li><%= link_to "Команда", about_team_path %></li>
-          <li><%= link_to "Контактная информация", contacts_path %></li>
-          <li><%= link_to "NA-NA", trololo_path %></li>
-          <li><%= link_to "Каталог товаров", categories_path %></li>
+          <li><%= link_to t('menu.about'), about_path %></li>
+          <li><%= link_to t('menu.team'), about_team_path %></li>
+          <li><%= link_to t('menu.contacts'), contacts_path %></li>
+          <li><%= link_to t('menu.nana'), trololo_path %></li>
+          <li><%= link_to t('menu.catalog'), categories_path %></li>
         </ul>
       </div>
     </div>
@@ -35,7 +35,7 @@
       </div>
       <div class="span4">
         <% if signed_in? %>
-            Здравствуйте, мы вас помним.
+            <%= t 'hi' %>
             <%= current_user.email %>
 
             <div>

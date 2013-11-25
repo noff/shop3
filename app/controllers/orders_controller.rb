@@ -32,6 +32,10 @@ class OrdersController < ApplicationController
     # Чистим корзину
     current_user.item_users.destroy_all
 
+    # Отправляем письма админу и клиенту
+    OrderMailer.order_created_for_user order
+    OrderMailer.order_created_for_admin order
+
     # Переходим на просмотр заказа
     redirect_to order
 

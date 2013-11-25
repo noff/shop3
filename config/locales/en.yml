@@ -20,4 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hi: "Hello, glad to see you again!"
+  menu:
+    about: 'About'
+    team: 'Team'
+    contacts: 'Contacts'
+    nana: 'Na Na'
+    catalog: 'Catalog'

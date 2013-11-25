@@ -10,6 +10,7 @@ gem "twitter-bootstrap-rails", ">= 2.2.8"
 
 group :development do
 	gem 'sqlite3'
+  gem 'letter_opener'
 end
 group :test do
 	gem 'sqlite3'
@@ -18,7 +19,6 @@ group :production do
 	gem 'pg'
   gem 'rails_12factor'
 end
-
 
 gem 'devise'
 
