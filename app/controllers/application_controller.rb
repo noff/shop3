@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
 
     unless lang.blank?
       I18n.locale = lang
-      cookies[:lang] = {value: lang, expires_in: DateTime.current + 3.months}
+      cookies[:lang] = {value: lang, expires_in: 3.months}
     end
 
   end

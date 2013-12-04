@@ -66,3 +66,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "recaptcha", :require => "recaptcha/rails"

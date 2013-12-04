@@ -8,7 +8,10 @@
     <%= f.input :rating, collection: [5,4,3,2,1] %>
   </div>
 
+  <%= recaptcha_tags display: {theme: 'clean'} %>
+
   <div class="actions">
     <%= f.button :submit %>
   </div>
+
 <% end %>

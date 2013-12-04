@@ -1,0 +1,37 @@
+a {
+  color: blue;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+}
+
+body {
+  color: green;
+  font-size: 18px;
+}
+
+.navbar {
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  .navbar-inner {
+    background: #333333;
+    border: 0;
+    border-radius: 0;
+    a.brand {
+      color: yellow;
+    }
+    .nav {
+      li {
+        a {
+          color: white;
+          &:hover {
+            color: yellow;
+          }
+        }
+      }
+    }
+  }
+}

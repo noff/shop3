@@ -22,3 +22,47 @@
 }
 
 
+
+
+
+.category-element {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  padding: 10px;
+  &:hover {
+    background: #CCCCCC;
+  }
+  .name {
+    font-size: 30px;
+    margin-bottom: 20px;
+    a {
+      color: navy;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .edit, .delete {
+    font-size: 12px;
+  }
+
+  .edit {
+    a {
+      color: green;
+    }
+  }
+
+  .delete {
+    a {
+      color: gray;
+    }
+  }
+
+}
+
